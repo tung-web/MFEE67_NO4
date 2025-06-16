@@ -10,12 +10,12 @@ function alertAndBack($msg=""){
 function alertGoBack($msg=""){
   echo "<script>
     alert('$msg');
-    window.location = './pageMsgsList.php';
+    window.location = 'pageMsgsList.php';
   </script>";
 }
 
 
-function alertGoTO($msg="", $url="./pageMsgsList.php"){
+function alertGoTO($msg="", $url="pageMsgsList.php"){
   echo "<script>
     alert('$msg');
     window.location = '$url';
@@ -25,7 +25,7 @@ function alertGoTO($msg="", $url="./pageMsgsList.php"){
 // 有預設值的參數要往最後放
 function timeoutGoBack($time=1000){
   echo "<script>
-    setTimeout(()=>window.location = './pageMsgsList.php', $time);
+    setTimeout(()=>window.location = 'pageMsgsList.php', $time);
   </script>";
 }
 
